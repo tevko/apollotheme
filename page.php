@@ -13,17 +13,21 @@
  */
 
 get_header(); ?>
-
+	<!-- page hero -->
 	<section class="hero">
 		<img src="<?php echo wp_get_attachment_image_src( get_field('page_hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('page_hero_image') ); ?>" alt="">
 
 		<?php the_field('page_hero_text'); ?>
 	</section>
+	<!-- main page content -->
 	<main>
-		<!-- main page content -->
-		<?php the_content(); ?>
-	</main>
+		<?php while ( have_posts() ) : the_post(); ?>
 
+            <?php the_content(); ?>
+
+        <?php endwhile; ?>
+	</main>
+	<!-- custom sidebar -->
 	<?php if( have_rows('sidebar') ): ?>
 		<aside class="Page-sidebar">
 			<ul>
