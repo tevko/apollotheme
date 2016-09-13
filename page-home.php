@@ -11,7 +11,8 @@
 get_header(); ?>
 
 <section class="hero">
-	<?php the_field('hero_image'); ?>
+	<img src="<?php echo wp_get_attachment_image_src( get_field('hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('hero_image') ); ?>" alt="">
+
 	<?php the_field('hero_text_1'); ?>
 	<?php the_field('hero_text_2'); ?>
 </section>
@@ -22,10 +23,11 @@ get_header(); ?>
 	    <?php while( have_rows('promo_boxes') ): the_row(); ?>
 
 	 		<article class="promoBox">
-	 			<?php the_sub_field('headline'); ?>
-	 			<?php the_sub_field('body_copy'); ?>
-	 			<?php the_sub_field('icon'); ?>
-	 			<?php the_sub_field('link'); ?>
+	 			<a href="<?php the_sub_field('link'); ?>">
+		 			<?php the_sub_field('headline'); ?>
+		 			<?php the_sub_field('body_copy'); ?>
+		 			<img src="<?php echo wp_get_attachment_image_src( get_sub_field('icon') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_sub_field('icon') ); ?>" alt="">
+		 		</a>
 	 		</article>
 
 	    <?php endwhile; ?>
@@ -35,7 +37,7 @@ get_header(); ?>
 	<article class="promoBox--Large">
 		<?php the_field('large_promo_box_headline'); ?>
 		<?php the_field('large_promo_box_body_copy'); ?>
-		<?php var_dump(the_field('large_promo_box_image')); ?>
+		<img src="<?php echo wp_get_attachment_image_src( get_field('large_promo_box_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('large_promo_box_image') ); ?>" alt="">
 	</article>
 
 </section>
