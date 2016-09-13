@@ -139,10 +139,10 @@
                     "library": "all",
                     "min_width": 150,
                     "min_height": 150,
-                    "min_size": ".025",
+                    "min_size": "",
                     "max_width": 150,
                     "max_height": 150,
-                    "max_size": "",
+                    "max_size": ".025",
                     "mime_types": ""
                 },
                 {
@@ -258,5 +258,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1473448144
+    "modified": 1473782073
 }
