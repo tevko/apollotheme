@@ -42,12 +42,5 @@ get_header(); ?>
 
 </section>
 
-<style>
-	section, article {
-		display: block;
-		margin: 20px;
-	}
-</style>
-
 <?php
 get_footer();

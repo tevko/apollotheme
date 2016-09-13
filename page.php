@@ -14,25 +14,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<section class="hero">
+		<img src="<?php echo wp_get_attachment_image_src( get_field('page_hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('page_hero_image') ); ?>" alt="">
 
-			<?php
-			while ( have_posts() ) : the_post();
+		<?php the_field('page_hero_text'); ?>
+	</section>
+	<main>
+		<!-- main page content -->
+		<?php the_content(); ?>
+	</main>
 
-				get_template_part( 'template-parts/content', 'page' );
+	<?php if( have_rows('sidebar') ): ?>
+		<aside class="Page-sidebar">
+			<ul>
+			    <?php while( have_rows('sidebar') ): the_row(); ?>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+			 		<li>
+			 			<a href="<?php the_sub_field('sidebar_link'); ?>">
+			 				<?php the_sub_field('sidebar_text'); ?>
+			 			</a>
+			 		</li>
 
-			endwhile; // End of the loop.
-			?>
+			    <?php endwhile; ?>
+		    </ul>
+		</aside>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	<?php endif; ?>
 
 <?php
-get_sidebar();
 get_footer();

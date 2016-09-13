@@ -17,4 +17,24 @@
 <?php wp_head(); ?>
 </head>
 
-
+<header class="Page-header">
+	<img class="logo" src="http://placehold.it/250x150" alt="">
+	<nav class="mainNav">
+		<a href="#">Industrial Solutions</a>
+		<a href="#">Controllers</a>
+		<a href="#">Products</a>
+		<a href="#">Optical Bonding</a>
+		<a href="#">Customizing</a>
+		<a href="#">Company</a>
+		<a href="#">Support</a>
+		<div class="mainNav-search">
+			<form role="search" method="get" class="search-form" action="/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" value="" name="s">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>
+		</div>
+	</nav>
+</header>
