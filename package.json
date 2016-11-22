@@ -1,0 +1,15 @@
+{
+  "name": "apollo",
+  "version": "1.0.0",
+  "description": "A wordpress theme",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:tevko/apollotheme.git",
+    "type": "git"
+  },
+  "author": "Tim <timevko@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
