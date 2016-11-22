@@ -15,9 +15,10 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php wp_head(); ?>
+<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/public/css/main.min.css">
 </head>
 
-<header class="Page-header">
+<header class="Page-header scaffold">
 	<img class="logo" src="http://placehold.it/250x150" alt="">
 	<nav class="mainNav">
 		<a href="#">Industrial Solutions</a>
