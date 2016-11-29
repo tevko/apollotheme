@@ -8,7 +8,7 @@ const browserSync = require('browser-sync').create();
 
 
 gulp.task('clean', cb => {
-    del([paths.pub], cb);
+    del(['public/css'], cb);
 });
 
 gulp.task('styles', () => {

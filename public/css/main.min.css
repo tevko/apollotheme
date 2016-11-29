@@ -1,1 +1,1 @@
-.scaffold{max-width:1440px;margin:0 auto;padding:0 15px;display:none}
+html{box-sizing:border-box;font-family:arial}*,:after,:before{box-sizing:inherit}.scaffold{max-width:1440px;margin:0 auto;padding:0 15px}.Page-header{-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-align:center;align-items:center}.mainNav,.Page-header{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}.mainNav a{display:inline-block;margin:0 1em;font-size:16px;font-weight:700;text-decoration:none;color:#a5a5a5}.mainNav-search .screen-reader-text{visibility:hidden}

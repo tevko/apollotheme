@@ -1,1 +1,29 @@
 //header stuff goes here
+
+.Page-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mainNav {
+	display: flex;
+	justify-content: space-between;
+
+	a {
+		display: inline-block;
+		margin: 0 1em;
+		font-size: 16px;
+		font-weight: bold;
+		text-decoration: none;
+		color: $strongGray;
+	}
+}
+
+.mainNav-search {
+
+	.screen-reader-text {
+		visibility: hidden;
+	}
+}

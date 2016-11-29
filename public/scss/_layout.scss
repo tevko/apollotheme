@@ -1,5 +1,14 @@
 //layout stuff goes here
 
+html {
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
 .scaffold {
 	max-width: 1440px;
 	margin: 0 auto;

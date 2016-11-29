@@ -19,7 +19,7 @@
 </head>
 
 <header class="Page-header scaffold">
-	<img class="logo" src="http://placehold.it/250x150" alt="">
+	<img class="logo" src="http://placehold.it/175x100" alt="">
 	<nav class="mainNav">
 		<a href="#">Industrial Solutions</a>
 		<a href="#">Controllers</a>
