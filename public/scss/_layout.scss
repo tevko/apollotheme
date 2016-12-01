@@ -13,4 +13,8 @@ html {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 50px;
+
+	@media (max-width: 1200px) {
+		padding: 0 15px;
+	}
 }

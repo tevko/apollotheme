@@ -20,7 +20,9 @@
 
 <header class="Page-header scaffold">
 	<img class="logo" src="http://placehold.it/175x100" alt="">
-	<nav class="mainNav">
+	<button class="_JS_toggleMenu menuButton">Menu</button>
+	<nav class="mainNav _JS_menuIsClosed _JS_menu">
+		<span class="_JS_close menuClose">X</span>
 		<a href="#">Industrial Solutions</a>
 		<a href="#">Controllers</a>
 		<a href="#">Products</a>
@@ -39,3 +41,16 @@
 		</div>
 	</nav>
 </header>
+
+<script>
+	(function() {
+		document.querySelector('._JS_toggleMenu').addEventListener('click', function() {
+			var menu = document.querySelector('._JS_menu');
+			menu.classList.contains('_JS_menuIsClosed') ? menu.classList.remove('_JS_menuIsClosed') : menu.classList.add('_JS_menuIsClosed');
+		});
+
+		document.querySelector('._JS_close').addEventListener('click', function() {
+			document.querySelector('._JS_menu').classList.add('_JS_menuIsClosed');
+		});
+	})();
+</script>
