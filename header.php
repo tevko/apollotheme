@@ -44,13 +44,17 @@
 
 <script>
 	(function() {
+		var menu = document.querySelector('._JS_menu');
 		document.querySelector('._JS_toggleMenu').addEventListener('click', function() {
-			var menu = document.querySelector('._JS_menu');
-			menu.classList.contains('_JS_menuIsClosed') ? menu.classList.remove('_JS_menuIsClosed') : menu.classList.add('_JS_menuIsClosed');
+			requestAnimationFrame(function() {
+				menu.classList.contains('_JS_menuIsClosed') ? menu.classList.remove('_JS_menuIsClosed') : menu.classList.add('_JS_menuIsClosed');
+			});
 		});
 
 		document.querySelector('._JS_close').addEventListener('click', function() {
-			document.querySelector('._JS_menu').classList.add('_JS_menuIsClosed');
+			requestAnimationFrame(function() {
+				menu.classList.add('_JS_menuIsClosed');
+			});
 		});
 	})();
 </script>
