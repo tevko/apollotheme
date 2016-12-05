@@ -5,6 +5,10 @@ html {
 	font-family: arial;
 }
 
+body {
+	margin: 0;
+}
+
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -17,4 +21,8 @@ html {
 	@media (max-width: 1200px) {
 		padding: 0 15px;
 	}
+}
+
+.alignright {
+	float: right;
 }

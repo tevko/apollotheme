@@ -7,7 +7,7 @@
             "label": "Hero Image",
             "name": "hero_image",
             "type": "image",
-            "instructions": "",
+            "instructions": "File must be exactly 600px tall",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,10 +19,10 @@
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
-            "min_height": "",
+            "min_height": 600,
             "min_size": "",
             "max_width": "",
-            "max_height": "",
+            "max_height": 600,
             "max_size": ".2",
             "mime_types": ""
         },
@@ -87,6 +87,25 @@
                     "key": "field_57d305b0d545d",
                     "label": "Headline",
                     "name": "headline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5845e78bebb32",
+                    "label": "Sub-headline",
+                    "name": "sub-headline",
                     "type": "text",
                     "instructions": "",
                     "required": 0,
@@ -201,8 +220,8 @@
             "media_upload": 1
         },
         {
-            "key": "field_57d3085ca4b30",
-            "label": "Large Promo Box Image",
+            "key": "field_5845ef020f48a",
+            "label": "Large promo box image",
             "name": "large_promo_box_image",
             "type": "image",
             "instructions": "",
@@ -221,7 +240,7 @@
             "min_size": "",
             "max_width": "",
             "max_height": "",
-            "max_size": ".2",
+            "max_size": "",
             "mime_types": ""
         }
     ],
@@ -258,5 +277,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1473793826
+    "modified": 1480978617
 }
