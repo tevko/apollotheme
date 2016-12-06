@@ -1,0 +1,43 @@
+
+.Page-footer {
+	border-top: solid 2px $boldedGray;
+	margin-bottom: 30px;
+
+	.footerContainer {
+		display: flex;
+		justify-content: space-between;
+
+		h4 {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		svg {
+			margin: 10px;
+		}
+	}
+
+	.contentBucket {
+		max-width: 265px;
+	}
+
+	.bolded {
+		font-size: 16px;
+	}
+
+	.social {
+		padding: 0 12px;
+	}
+
+	@media (max-width: 1000px) {
+		.footerContainer {
+			flex-direction: column;
+			align-items: center;
+    		text-align: center;
+		}
+	}
+}
