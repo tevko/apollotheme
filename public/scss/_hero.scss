@@ -49,3 +49,17 @@
 		}
 	}
 }
+
+.hero-generalPage {
+	position: relative;
+
+	.secondary {
+		position: absolute;
+		text-align: center;
+		margin: 0;
+		transform: translateY(-50%);
+		top: 50%;
+		width: 100%;
+		text-transform: uppercase;
+	}
+}

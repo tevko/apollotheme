@@ -143,3 +143,10 @@ function disable_wp_cruft() {
 }
 
 add_action( 'init', 'disable_wp_cruft' );
+
+
+if( function_exists('acf_add_options_page') ) {
+
+	acf_add_options_page();
+
+}

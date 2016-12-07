@@ -34,3 +34,63 @@ body {
 .tac {
 	text-align: center;
 }
+
+.group:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.Page-content {
+	float: right;
+	width: 80%;
+
+	@media (max-width: 829px) {
+    	width: 100%;
+    }
+}
+
+.Page-sidebar {
+	float: left;
+	width: 15%;
+	background-color: $lightestGray;
+	margin-top: 1em;
+	min-width: 155px;
+    margin-right: 5px;
+
+    @media (max-width: 829px) {
+    	margin: 1em 0;
+    	width: 100%;
+    }
+
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+		margin: 0;
+	}
+
+	li {
+
+		&:last-child {
+
+			a {
+				border-bottom: 0;
+			}
+		}
+
+		a {
+			padding: 12px 0 12px 1em;
+			border-bottom: solid 2px $burgandy;
+			text-decoration: none;
+			color: black;
+			padding-left: 1em;
+			display: block;
+		}
+	}
+}
+
+
+
+main {
+	margin-bottom: 2em;
+}

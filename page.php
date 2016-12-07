@@ -14,27 +14,28 @@
 
 get_header(); ?>
 	<!-- page hero -->
-	<section class="hero">
+	<section class="hero hero-generalPage">
 		<img src="<?php echo wp_get_attachment_image_src( get_field('page_hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('page_hero_image') ); ?>" alt="">
 
-		<?php the_field('page_hero_text'); ?>
+		<p class="secondary"><?php the_field('page_hero_text'); ?></p>
 	</section>
 	<!-- main page content -->
-	<main>
-		<?php while ( have_posts() ) : the_post(); ?>
+	<main class="scaffold group">
+		<div class="Page-content">
+			<?php while ( have_posts() ) : the_post(); ?>
 
-            <?php the_content(); ?>
+	            <?php the_content(); ?>
 
-        <?php endwhile; ?>
-	</main>
-	<!-- custom sidebar -->
-	<?php if( have_rows('sidebar') ): ?>
+	        <?php endwhile; ?>
+        </div>
+		<!-- custom sidebar -->
+		<?php if( have_rows('sidebar') ): ?>
 		<aside class="Page-sidebar">
 			<ul>
 			    <?php while( have_rows('sidebar') ): the_row(); ?>
 
 			 		<li>
-			 			<a href="<?php the_sub_field('sidebar_link'); ?>">
+			 			<a class="sidebar-link" href="<?php the_sub_field('sidebar_link'); ?>">
 			 				<?php the_sub_field('sidebar_text'); ?>
 			 			</a>
 			 		</li>
@@ -43,7 +44,8 @@ get_header(); ?>
 		    </ul>
 		</aside>
 
-	<?php endif; ?>
+		<?php endif; ?>
+	</main>
 
 <?php
 get_footer();
