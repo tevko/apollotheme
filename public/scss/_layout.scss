@@ -87,10 +87,23 @@ body {
 			display: block;
 		}
 	}
+
+	.sidebar-sub-link a {
+		padding: 8px 0 8px 2em;
+	    font-size: 13px;
+	}
 }
 
 
 
 main {
 	margin-bottom: 2em;
+}
+
+.product-options {
+	padding: 10px 1em;
+}
+
+iframe {
+	max-width: 100%;
 }

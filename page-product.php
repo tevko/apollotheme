@@ -1,11 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Product
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -21,6 +17,23 @@ get_header(); ?>
 	</section>
 	<!-- main page content -->
 	<main class="scaffold group">
+		<?php if ( get_field('show_downloads_link') || get_field('show_request_product_link') ): ?>
+			<div class="product-options">
+				<?php if ( get_field('show_request_product_link') ): ?>
+					<a href="#">Request Product</a>
+				<?php endif; ?>
+				<?php if ( get_field('show_downloads_link') ): ?>
+					<h3>Downloads</h3> <span class="_JS_toggle">+</span>
+					<div class="_JS_downloads">
+						<?php while( have_rows('downloads') ): the_row(); ?>
+							<a href="<?php the_sub_field('file_url'); ?>">
+								<?php the_sub_field('file_name'); ?>
+							</a>
+						<?php endwhile; ?>
+					</div>
+				<?php endif; ?>
+			</div>
+		<?php endif; ?>
 		<div class="Page-content">
 			<?php while ( have_posts() ) : the_post(); ?>
 
