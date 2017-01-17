@@ -5,6 +5,8 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
+	position: relative;
+	z-index: 1;
 
 	@media (max-width: 1200px) {
 		justify-content: center;
@@ -22,6 +24,7 @@
 	min-width: 910px;
     align-items: center;
 	transition: transform .25s ease-in-out;
+	position: relative;
 
 	a {
 		display: inline-block;
@@ -29,6 +32,31 @@
 		font-weight: bold;
 		text-decoration: none;
 		color: $strongGray;
+	}
+
+	.navItem {
+
+		.subnav {
+			display: none;
+			position: absolute;
+			left: 0;
+			right: 0;
+			background-color: #fff;
+			padding: 20px;
+			border-bottom: solid 1px;
+
+			a {
+				font-size: 14px;
+				margin-right: 10px;
+			}
+		}
+
+		&:hover {
+			.subnav {
+				display: block;
+				padding: 35px 0 20px 20px;
+			}
+		}
 	}
 
 	@media (max-width: 1200px) {

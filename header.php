@@ -23,13 +23,66 @@
 	<button class="_JS_toggleMenu menuButton">Menu</button>
 	<nav class="mainNav _JS_menuIsClosed _JS_menu">
 		<span class="_JS_close menuClose">X</span>
-		<a href="#">Industrial Solutions</a>
-		<a href="#">Controllers</a>
-		<a href="#">Products</a>
-		<a href="#">Optical Bonding</a>
-		<a href="#">Customizing</a>
-		<a href="#">Company</a>
-		<a href="#">Support</a>
+		<div class="navItem">
+			<a href="/industrial-solutions">Industrial Solutions</a>
+			<div class="subnav">
+				<a href="/industrial-solutions/public-displays">Public Displays</a>
+				<a href="/industrial-solutions/industrial-displays">Industrial Displays</a>
+				<a href="/industrial-solutions/fire-rated-displays">Fire Rated Displays</a>
+				<a href="/industrial-solutions/video-wall">Video Wall</a>
+				<a href="/industrial-solutions/touch-displays">Touch Displays</a>
+				<a href="/industrial-solutions/custom-solutions">Custom Solutions</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/controllers">Controllers</a>
+			<div class="subnav">
+				<a href="#">test</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/products">Products</a>
+			<div class="subnav">
+				<a href="/products/tft-displays">TFT Displays</a>
+				<a href="/products/compact-panels">Compact Panels</a>
+				<a href="/products/led-converters">LED Converters</a>
+				<a href="/products/touch-screens">Touch Screens</a>
+				<a href="/products/chassis-solutions">Chassis Solutions</a>
+				<a href="/products/power-supplies">Power Supplies</a>
+				<a href="/products/bluetooth-smart-module">Bluetooth Smart Module</a>
+				<a href="/products/army-raspberry-pi">ARMY Raspberry Pi</a>
+				<a href="/products/passive-displays">Passive Displays</a>
+				<a href="/products/single-board-computers">Single Board Computers</a>
+				<a href="/products/display-kit-solutions">Display Kit Solutions</a>
+				<a href="/products/applications">Applications</a>
+				<a href="/products/network-accessories">Network Accessories</a>
+				<a href="/products/software">Software</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/optical-bonding">Optical Bonding</a>
+			<div class="subnav">
+				<a href="#">test</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/customizing">Customizing</a>
+			<div class="subnav">
+				<a href="#">test</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/company">Company</a>
+			<div class="subnav">
+				<a href="#">test</a>
+			</div>
+		</div>
+		<div class="navItem">
+			<a href="/support">Support</a>
+			<div class="subnav">
+				<a href="#">test</a>
+			</div>
+		</div>
 		<div class="mainNav-search">
 			<form role="search" method="get" class="search-form" action="/">
 				<label>
