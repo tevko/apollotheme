@@ -7,7 +7,7 @@
             "label": "Hero Image",
             "name": "hero_image",
             "type": "image",
-            "instructions": "File must be exactly 600px tall",
+            "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -19,10 +19,10 @@
             "preview_size": "thumbnail",
             "library": "all",
             "min_width": "",
-            "min_height": 600,
+            "min_height": "",
             "min_size": "",
             "max_width": "",
-            "max_height": 600,
+            "max_height": "",
             "max_size": ".2",
             "mime_types": ""
         },
@@ -224,7 +224,7 @@
             "label": "Large promo box image",
             "name": "large_promo_box_image",
             "type": "image",
-            "instructions": "Image must be 600px wide",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -235,10 +235,10 @@
             "return_format": "id",
             "preview_size": "thumbnail",
             "library": "all",
-            "min_width": 600,
+            "min_width": "",
             "min_height": "",
             "min_size": "",
-            "max_width": 600,
+            "max_width": "",
             "max_height": "",
             "max_size": "",
             "mime_types": ""
@@ -277,5 +277,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1481062050
+    "modified": 1484705688
 }

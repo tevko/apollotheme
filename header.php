@@ -19,7 +19,7 @@
 </head>
 
 <header class="Page-header scaffold">
-	<img class="logo" src="http://placehold.it/175x100" alt="">
+	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/public/img/logo.jpg" alt="">
 	<button class="_JS_toggleMenu menuButton">Menu</button>
 	<nav class="mainNav _JS_menuIsClosed _JS_menu">
 		<span class="_JS_close menuClose">X</span>
@@ -37,7 +37,11 @@
 		<div class="navItem">
 			<a href="/controllers">Controllers</a>
 			<div class="subnav">
-				<a href="#">test</a>
+				<a href="/controllers/tft-controller-rgb-dvi-hdmi-sdi-video">TFT Controller RGB DVI HDMI SDI Video</a>
+				<a href="/controllers/tft-controller-usb-lan-serial">TFT Controller USB LAN Serial</a>
+				<a href="/controllers/industrial-mediaplayers">Industrial Mediaplayers</a>
+				<a href="/controllers/remote-diagnostic">Remote Diagnostic</a>
+				<a href="/controllers/dc-dc-converter">DC - DC Converter</a>
 			</div>
 		</div>
 		<div class="navItem">
@@ -62,25 +66,44 @@
 		<div class="navItem">
 			<a href="/optical-bonding">Optical Bonding</a>
 			<div class="subnav">
-				<a href="#">test</a>
+				<a href="/optical-bonding/real-vacubond-applications">Real VacuBond Applications</a>
+				<a href="/optical-bonding/real-vacubond-photos">VacuBond Photos</a>
 			</div>
 		</div>
 		<div class="navItem">
 			<a href="/customizing">Customizing</a>
 			<div class="subnav">
-				<a href="#">test</a>
+				<a href="/customizing/customized-design-digital-signage">Customized Design Digital Signage</a>
+				<a href="/customizing/engineering-presentation">Engineering Presentation</a>
+				<a href="/customizing/revitalisation-substitution-service">Revitalisation / Substitution Service</a>
 			</div>
 		</div>
 		<div class="navItem">
 			<a href="/company">Company</a>
 			<div class="subnav">
-				<a href="#">test</a>
+				<a href="/company/company-network">Company Network</a>
+				<a href="/company/contact-us">Contact Us</a>
+				<a href="/company/management">Management</a>
+				<a href="/company/corporate-philosophy">Corporate Philosophy</a>
+				<a href="/company/green-company">Green Company</a>
+				<a href="/company/linecard">Linecard</a>
+				<a href="/company/iso-certificate">ISO-Certificate</a>
+				<a href="/company/news">News</a>
+				<a href="<?php the_field('mailing_list_link', 'option'); ?>">Join Our Newsletter</a>
 			</div>
 		</div>
 		<div class="navItem">
 			<a href="/support">Support</a>
 			<div class="subnav">
-				<a href="#">test</a>
+				<a href="/support/downloads">Downloads</a>
+				<a href="/support/technical-support">Technical Support</a>
+				<a href="/support/repair-and-return-rma">Repair & Return (RMA)</a>
+				<a href="/support/gaurantee">Gaurantee</a>
+				<a href="/support/eol">EOL</a>
+				<a href="/support/reach">REACH</a>
+				<a href="/support/conflict-minerals">Conflict Minerals</a>
+				<a href="/support/rohs">ROHS</a>
+				<a href="/support/direct-contact">Direct Contact</a>
 			</div>
 		</div>
 		<div class="mainNav-search">

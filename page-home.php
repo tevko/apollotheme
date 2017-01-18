@@ -11,13 +11,10 @@
 get_header(); ?>
 
 <section class="hero">
-	<img src="<?php echo wp_get_attachment_image_src( get_field('hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('hero_image') ); ?>" sizes="100vw">
-
-	<div class="heroText">
+	<div class="heroText home" style="background-image: url('<?php echo wp_get_attachment_image_src( get_field("hero_image"), "full" )[0]; ?>')">
 		<p class="primary"><?php the_field('hero_text_1'); ?></p>
 		<p class="secondary"><?php the_field('hero_text_2'); ?></p>
 	</div>
-
 </section>
 
 <section class="promo scaffold">

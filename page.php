@@ -15,9 +15,7 @@
 get_header(); ?>
 	<!-- page hero -->
 	<section class="hero hero-generalPage">
-		<img src="<?php echo wp_get_attachment_image_src( get_field('page_hero_image') )[0]; ?>" srcset="<?php echo wp_get_attachment_image_srcset( get_field('page_hero_image') ); ?>" alt="">
-
-		<p class="secondary"><?php the_field('page_hero_text'); ?></p>
+		<p class="secondary heroText" style="background-image: url('<?php echo wp_get_attachment_image_src( get_field("page_hero_image"), "full" )[0] ?>')"><?php the_field('page_hero_text'); ?></p>
 	</section>
 	<!-- main page content -->
 	<main class="scaffold group">
@@ -33,11 +31,19 @@ get_header(); ?>
 		<aside class="Page-sidebar">
 			<ul>
 			    <?php while( have_rows('sidebar') ): the_row(); ?>
+			    	<?php
+			    		if (get_permalink() == get_sub_field('sidebar_link') || get_permalink($post->post_parent) == get_sub_field('sidebar_link')) {
+			    			$hidden = '';
+			    		} else {
+			    			$hidden = 'hidden-sub-links';
+			    		}
+			    	?>
 
-			 		<li>
+			 		<li class="<?php echo $hidden; ?>">
 			 			<a class="sidebar-link" href="<?php the_sub_field('sidebar_link'); ?>">
 			 				<?php the_sub_field('sidebar_text'); ?>
 			 			</a>
+			 			<ul>
 			 			<?php while( have_rows('sub_links') ): the_row(); ?>
 			 				<li class="sidebar-sub-link">
 			 					<a class="sidebar-link" href="<?php the_sub_field('sublink_url'); ?>">
@@ -45,6 +51,7 @@ get_header(); ?>
 			 					</a>
 			 				</li>
 			 			<?php endwhile; ?>
+			 			</ul>
 			 		</li>
 
 			    <?php endwhile; ?>
