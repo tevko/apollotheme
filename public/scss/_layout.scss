@@ -45,14 +45,23 @@ body {
 	width: 15%;
 	float: left;
 	margin-top: 15px;
+	padding: 10px 1em;
+	padding-right: 0;
 
 	@media (max-width: 990px) {
     	width: 100%;
     }
+}
 
-	& + .Page-content {
+.isProductPage {
+	.Page-content {
 		width: 68%;
 		padding: 0 30px 0 20px;
+		float: left;
+
+		h1 {
+			margin-top: 0;
+		}
 
 		@media (max-width: 990px) {
 	    	width: 100%;
@@ -61,7 +70,7 @@ body {
 }
 
 .Page-content {
-	float: left;
+	float: right;
 	width: 80%;
 	margin-top: 20px;
 
@@ -71,7 +80,7 @@ body {
 }
 
 .Page-sidebar {
-	float: right;
+	float: left;
 	width: 15%;
 	background-color: $lightestGray;
 	margin-top: 20px;
@@ -118,10 +127,6 @@ body {
 
 main {
 	margin-bottom: 2em;
-}
-
-.product-options {
-	padding: 10px 1em;
 }
 
 iframe {
