@@ -24,58 +24,46 @@
 	<nav class="mainNav _JS_menuIsClosed _JS_menu">
 		<span class="_JS_close menuClose">X</span>
 		<div class="navItem">
-			<a href="/industrial-solutions">Industrial Solutions</a>
+			<a href="/flat-panel-displays">Flat Panel Displays</a>
 			<div class="subnav">
-				<a href="/industrial-solutions/public-displays">Public Displays</a>
-				<a href="/industrial-solutions/industrial-displays">Industrial Displays</a>
-				<a href="/industrial-solutions/fire-rated-displays">Fire Rated Displays</a>
-				<a href="/industrial-solutions/video-wall">Video Wall</a>
-				<a href="/industrial-solutions/touch-displays">Touch Displays</a>
-				<a href="/industrial-solutions/custom-solutions">Custom Solutions</a>
+				<a href="/flat-panel-displays/tft-display-modules">TFT Display Modules</a>
+				<a href="/flat-panel-displays/kit-solutions">Kit Solutions</a>
+				<a href="/flat-panel-displays/compact-panels">Compact Panels</a>
+				<a href="/flat-panel-displays/industrial-monitors">Industrial Monitors</a>
+				<a href="/flat-panel-displays/custom-solutions">Custom Solutions</a>
+				<a href="/flat-panel-displays/passive-displays">Passive Displays</a>
 			</div>
 		</div>
 		<div class="navItem">
-			<a href="/controllers">Controllers</a>
+			<a href="/touch-screens">Touch Screens</a>
 			<div class="subnav">
-				<a href="/controllers/tft-controller-rgb-dvi-hdmi-sdi-video">TFT Controller RGB DVI HDMI SDI Video</a>
-				<a href="/controllers/tft-controller-usb-lan-serial">TFT Controller USB LAN Serial</a>
-				<a href="/controllers/industrial-mediaplayers">Industrial Mediaplayers</a>
-				<a href="/controllers/remote-diagnostic">Remote Diagnostic</a>
-				<a href="/controllers/dc-dc-converter">DC - DC Converter</a>
+				<a href="/touch-screens/touch-screens">Touch Screens</a>
+				<a href="/touch-screens/touch-displays">Touch Displays</a>
+				<a href="/touch-screens/your-design">Your Design</a>
 			</div>
 		</div>
 		<div class="navItem">
-			<a href="/products">Products</a>
+			<a href="/tft-controllers">TFT Controllers</a>
 			<div class="subnav">
-				<a href="/products/tft-displays">TFT Displays</a>
-				<a href="/products/compact-panels">Compact Panels</a>
-				<a href="/products/led-converters">LED Converters</a>
-				<a href="/products/touch-screens">Touch Screens</a>
-				<a href="/products/chassis-solutions">Chassis Solutions</a>
-				<a href="/products/power-supplies">Power Supplies</a>
-				<a href="/products/bluetooth-smart-module">Bluetooth Smart Module</a>
-				<a href="/products/army-raspberry-pi">ARMY Raspberry Pi</a>
-				<a href="/products/passive-displays">Passive Displays</a>
-				<a href="/products/single-board-computers">Single Board Computers</a>
-				<a href="/products/display-kit-solutions">Display Kit Solutions</a>
-				<a href="/products/applications">Applications</a>
-				<a href="/products/network-accessories">Network Accessories</a>
-				<a href="/products/software">Software</a>
+				<a href="/tft-controllers/tft-controller-rgb-dvi-hdmi-sdi-video">TFT Controller RGB DVI HDMI SDI Video</a>
+				<a href="/tft-controllers/tft-controller-usb-lan-serial">TFT Controller USB LAN Serial</a>
+				<a href="/tft-controllers/industrial-mediaplayers">Industrial Mediaplayers</a>
+				<a href="/tft-controllers/remote-diagnostic">Remote Diagnostic</a>
+				<a href="/tft-controllers/interface">Interface</a>
+				<a href="/tft-controllers/dc-dc-converter">DC-DC Converter</a>
 			</div>
 		</div>
 		<div class="navItem">
 			<a href="/optical-bonding">Optical Bonding</a>
-			<div class="subnav">
-				<a href="/optical-bonding/real-vacubond-applications">Real VacuBond Applications</a>
-				<a href="/optical-bonding/real-vacubond-photos">VacuBond Photos</a>
-			</div>
 		</div>
 		<div class="navItem">
-			<a href="/customizing">Customizing</a>
+			<a href="/accessories">Accessories</a>
 			<div class="subnav">
-				<a href="/customizing/customized-design-digital-signage">Customized Design Digital Signage</a>
-				<a href="/customizing/engineering-presentation">Engineering Presentation</a>
-				<a href="/customizing/revitalisation-substitution-service">Revitalisation / Substitution Service</a>
+				<a href="/accessories/led-converters">LED Converters</a>
+				<a href="/accessories/power-supplies">Power Supplies</a>
+				<a href="/accessories/bluetooth-smart-module">Bluetooth Smart Module</a>
+				<a href="/accessories/single-board-computers">Single Board Computers</a>
+				<a href="/accessories/arm-raspberry-pi">Arm Raspberry Pi</a>
 			</div>
 		</div>
 		<div class="navItem">
@@ -83,7 +71,6 @@
 			<div class="subnav">
 				<a href="/company/company-network">Company Network</a>
 				<a href="/company/contact-us">Contact Us</a>
-				<a href="/company/management">Management</a>
 				<a href="/company/corporate-philosophy">Corporate Philosophy</a>
 				<a href="/company/green-company">Green Company</a>
 				<a href="/company/linecard">Linecard</a>
@@ -103,7 +90,6 @@
 				<a href="/support/reach">REACH</a>
 				<a href="/support/conflict-minerals">Conflict Minerals</a>
 				<a href="/support/rohs">ROHS</a>
-				<a href="/support/direct-contact">Direct Contact</a>
 			</div>
 		</div>
 		<div class="mainNav-search">
