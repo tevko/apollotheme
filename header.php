@@ -19,7 +19,7 @@
 </head>
 
 <header class="Page-header scaffold">
-	<img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/public/img/logo.jpg" alt="">
+	<a href="/"><img class="logo" src="<?php echo get_stylesheet_directory_uri(); ?>/public/img/logo.jpg" alt=""></a>
 	<button class="_JS_toggleMenu menuButton">Menu</button>
 	<nav class="mainNav _JS_menuIsClosed _JS_menu">
 		<span class="_JS_close menuClose">X</span>

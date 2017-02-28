@@ -39,15 +39,21 @@
 		.subnav {
 			display: none;
 			position: absolute;
-			left: 0;
-			right: 0;
 			background-color: #fff;
 			padding: 20px;
 			border-bottom: solid 1px;
+			border-right: solid 1px;
+			border-left: solid 1px;
 
 			a {
 				font-size: 14px;
 				margin-right: 10px;
+				margin-bottom: 20px;
+				display: block;
+
+				&:last-child {
+					margin-bottom: 5px;
+				}
 			}
 		}
 
