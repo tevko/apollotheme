@@ -85,7 +85,7 @@
 				<a href="/support/downloads">Downloads</a>
 				<a href="/support/technical-support">Technical Support</a>
 				<a href="/support/repair-and-return-rma">Repair & Return (RMA)</a>
-				<a href="/support/gaurantee">Gaurantee</a>
+				<a href="/support/guarantee">Guarantee</a>
 				<a href="/support/eol">EOL</a>
 				<a href="/support/reach">REACH</a>
 				<a href="/support/conflict-minerals">Conflict Minerals</a>
