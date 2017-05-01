@@ -14,6 +14,9 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="http://www.trail-viewer.com/js/7385.js"></script>
+<noscript><img src="http://www.trail-viewer.com/7385.png" alt="" style="display:none;" /></noscript>
+
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
